@@ -3,7 +3,7 @@
 文件包含RIS信道的仿真程序 使用支持向量机（SVM）进行异常用户识别
 
 ## **模型**🖼️
-![模型示意]([https://github.com/menshxtc/RIS_Phase_Detection/main/risModle.png])
+![模型示意]([https://github.com/menshxtc/RIS_Phase_Detection/blob/main/risModle.png])
 
 ## **功能**⚙️
 
