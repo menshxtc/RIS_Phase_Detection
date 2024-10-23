@@ -1,0 +1,347 @@
+Sun Jun 30 23:01:01 2024    output.pstats
+
+         462961 function calls (461853 primitive calls) in 6956.993 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000 6956.998 6956.998 {built-in method builtins.exec}
+        1    0.000    0.000 6956.997 6956.997 <string>:1(<module>)
+        1    0.005    0.005 6956.997 6956.997 ris_oc_svm_memory.py:126(timeMeasure)
+      100    0.002    0.000 6934.664   69.347 memory_profiler.py:1185(wrapper)
+      100    0.151    0.002 6934.317   69.343 memory_profiler.py:759(f)
+      100    1.314    0.013 6934.163   69.342 ris_oc_svm_memory.py:81(pca_to_n)
+      100    0.001    0.000 4625.162   46.252 _classes.py:1663(predict)
+      100    0.001    0.000 4625.158   46.252 _base.py:398(predict)
+      100    0.003    0.000 4624.983   46.250 _base.py:418(_dense_predict)
+      100 4624.979   46.250 4624.979   46.250 {sklearn.svm._libsvm.predict}
+      100    0.052    0.001 2169.104   21.691 _classes.py:1584(fit)
+      100    0.014    0.000 2169.043   21.690 _base.py:139(fit)
+      100    0.005    0.000 2168.175   21.682 _base.py:292(_dense_fit)
+      100 2168.163   21.682 2168.170   21.682 {sklearn.svm._libsvm.fit}
+      100    1.410    0.014  121.668    1.217 _pca.py:385(fit_transform)
+      100    0.003    0.000  120.258    1.203 _pca.py:419(_fit)
+      100    1.846    0.018  113.838    1.138 _pca.py:531(_fit_truncated)
+      100    0.011    0.000  101.052    1.011 extmath.py:249(randomized_svd)
+      100    1.009    0.010   94.526    0.945 extmath.py:165(randomized_range_finder)
+     1600   80.281    0.050   80.287    0.050 extmath.py:120(safe_sparse_dot)
+2000/1900    6.985    0.003   24.222    0.013 {built-in method numpy.core._multiarray_umath.implement_array_function}
+      200    0.003    0.000   21.222    0.106 memory_profiler.py:269(memory_usage)
+      200   21.206    0.106   21.206    0.106 {built-in method time.sleep}
+      100    4.443    0.044   13.693    0.137 _base.py:97(transform)
+     1400   10.363    0.007   11.193    0.008 decomp_lu.py:151(lu)
+      400    0.014    0.000    9.865    0.025 base.py:495(_validate_data)
+      100    0.001    0.000    9.810    0.098 <__array_function__ internals>:2(var)
+      100    1.287    0.013    9.808    0.098 fromnumeric.py:3590(var)
+      400    0.066    0.000    9.804    0.025 validation.py:494(check_array)
+     3000    9.274    0.003    9.274    0.003 {method 'reduce' of 'numpy.ufunc' objects}
+      200    6.519    0.033    8.938    0.045 _methods.py:195(_var)
+      200    0.003    0.000    6.975    0.035 <__array_function__ internals>:2(dot)
+      500    0.015    0.000    5.712    0.011 validation.py:90(_assert_all_finite)
+      500    0.005    0.000    5.690    0.011 extmath.py:869(_safe_accumulator_op)
+      500    0.003    0.000    5.678    0.011 <__array_function__ internals>:2(sum)
+      500    0.005    0.000    5.673    0.011 fromnumeric.py:2123(sum)
+      500    0.006    0.000    5.668    0.011 fromnumeric.py:69(_wrapreduction)
+      100    0.010    0.000    4.443    0.044 decomp_qr.py:26(qr)
+      200    4.317    0.022    4.318    0.022 decomp_qr.py:11(safecall)
+      200    3.799    0.019    3.799    0.019 {built-in method numpy.array}
+      100    3.217    0.032    3.217    0.032 {built-in method builtins.sum}
+      100    2.287    0.023    2.302    0.023 decomp_svd.py:13(svd)
+      100    0.001    0.000    1.124    0.011 <__array_function__ internals>:2(mean)
+      100    0.001    0.000    1.123    0.011 fromnumeric.py:3322(mean)
+      100    0.005    0.000    1.121    0.011 _methods.py:162(_mean)
+      100    1.093    0.011    1.093    0.011 {built-in method gc.collect}
+      100    0.376    0.004    0.993    0.010 extmath.py:708(svd_flip)
+     1600    0.768    0.000    0.869    0.001 function_base.py:422(asarray_chkfinite)
+      100    0.001    0.000    0.617    0.006 <__array_function__ internals>:2(argmax)
+      100    0.001    0.000    0.616    0.006 fromnumeric.py:1121(argmax)
+      100    0.003    0.000    0.615    0.006 fromnumeric.py:51(_wrapfunc)
+      100    0.612    0.006    0.612    0.006 {method 'argmax' of 'numpy.ndarray' objects}
+      100    0.050    0.001    0.468    0.005 {method 'var' of 'numpy.ndarray' objects}
+      100    0.003    0.000    0.369    0.004 validation.py:845(check_X_y)
+      100    0.001    0.000    0.320    0.003 memory_profiler.py:713(__call__)
+      100    0.000    0.000    0.319    0.003 memory_profiler.py:728(add_function)
+      100    0.002    0.000    0.319    0.003 memory_profiler.py:645(add)
+      100    0.001    0.000    0.286    0.003 inspect.py:946(getsourcelines)
+     2400    0.215    0.000    0.215    0.000 {built-in method numpy.asarray}
+      100    0.003    0.000    0.174    0.002 _base.py:588(_validate_for_predict)
+      100    0.167    0.002    0.167    0.002 {method 'normal' of 'numpy.random.mtrand.RandomState' objects}
+      100    0.001    0.000    0.149    0.001 inspect.py:760(findsource)
+     1021    0.138    0.000    0.138    0.000 {built-in method nt.stat}
+      100    0.011    0.000    0.135    0.001 inspect.py:935(getblock)
+      921    0.001    0.000    0.125    0.000 genericpath.py:16(exists)
+    20100    0.042    0.000    0.115    0.000 tokenize.py:487(_tokenize)
+      100    0.003    0.000    0.109    0.001 inspect.py:714(getmodule)
+      970    0.003    0.000    0.103    0.000 inspect.py:680(getsourcefile)
+     1600    0.010    0.000    0.099    0.000 {method 'all' of 'numpy.ndarray' objects}
+      970    0.002    0.000    0.097    0.000 inspect.py:702(getabsfile)
+     1600    0.006    0.000    0.089    0.000 _methods.py:60(_all)
+     1400    0.053    0.000    0.064    0.000 flinalg.py:27(get_flinalg_funcs)
+    18000    0.006    0.000    0.038    0.000 tokenize.py:147(_compile)
+    18100    0.005    0.000    0.033    0.000 re.py:232(compile)
+    18100    0.014    0.000    0.029    0.000 re.py:271(_compile)
+    18102    0.023    0.000    0.023    0.000 {method 'match' of 're.Pattern' objects}
+     1840    0.001    0.000    0.021    0.000 ntpath.py:523(abspath)
+      100    0.004    0.000    0.020    0.000 memory_profiler.py:853(show_results)
+     1840    0.009    0.000    0.017    0.000 ntpath.py:450(normpath)
+      800    0.009    0.000    0.017    0.000 validation.py:254(_num_samples)
+    37251    0.009    0.000    0.016    0.000 {built-in method builtins.isinstance}
+      100    0.001    0.000    0.015    0.000 linecache.py:53(checkcache)
+      100    0.001    0.000    0.015    0.000 validation.py:986(_check_y)
+      300    0.004    0.000    0.015    0.000 validation.py:1153(check_is_fitted)
+      600    0.014    0.000    0.014    0.000 {built-in method builtins.print}
+      100    0.001    0.000    0.013    0.000 <__array_function__ internals>:2(triu)
+      200    0.002    0.000    0.012    0.000 numeric.py:149(ones)
+      100    0.001    0.000    0.012    0.000 validation.py:318(check_consistent_length)
+      100    0.001    0.000    0.012    0.000 twodim_base.py:475(triu)
+      200    0.001    0.000    0.011    0.000 memory_profiler.py:117(_get_memory)
+      100    0.003    0.000    0.010    0.000 _util.py:247(_asarray_validated)
+      200    0.001    0.000    0.010    0.000 memory_profiler.py:132(ps_util_tool)
+      400    0.003    0.000    0.009    0.000 base.py:359(_check_n_features)
+      300    0.007    0.000    0.009    0.000 validation.py:1218(<listcomp>)
+    18000    0.006    0.000    0.009    0.000 types.py:164(__get__)
+     3100    0.009    0.000    0.009    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+      200    0.001    0.000    0.008    0.000 <__array_function__ internals>:2(copyto)
+    20000    0.008    0.000    0.008    0.000 inspect.py:891(tokeneater)
+      100    0.001    0.000    0.008    0.000 <__array_function__ internals>:2(unique)
+      100    0.001    0.000    0.008    0.000 twodim_base.py:370(tri)
+     1100    0.002    0.000    0.007    0.000 abc.py:137(__instancecheck__)
+     2400    0.005    0.000    0.007    0.000 base.py:1205(isspmatrix)
+      500    0.003    0.000    0.007    0.000 numerictypes.py:358(issubdtype)
+      400    0.005    0.000    0.007    0.000 base.py:405(_check_feature_names)
+      100    0.002    0.000    0.007    0.000 arraysetops.py:138(unique)
+     7500    0.006    0.000    0.006    0.000 {method 'format' of 'str' objects}
+     5226    0.006    0.000    0.006    0.000 {built-in method builtins.getattr}
+      400    0.002    0.000    0.006    0.000 warnings.py:165(simplefilter)
+      300    0.006    0.000    0.006    0.000 _methods.py:66(_count_reduce_items)
+      400    0.005    0.000    0.006    0.000 validation.py:201(_num_features)
+      200    0.000    0.000    0.006    0.000 __init__.py:318(__init__)
+      100    0.001    0.000    0.006    0.000 _base.py:654(n_support_)
+      200    0.001    0.000    0.006    0.000 __init__.py:321(_init)
+     1100    0.003    0.000    0.006    0.000 {built-in method _abc._abc_instancecheck}
+      400    0.001    0.000    0.006    0.000 {method 'sum' of 'numpy.ndarray' objects}
+      200    0.001    0.000    0.005    0.000 validation.py:1002(column_or_1d)
+      400    0.000    0.000    0.005    0.000 _pswindows.py:724(wrapper)
+        2    0.000    0.000    0.005    0.003 sre_compile.py:759(compile)
+     9924    0.005    0.000    0.005    0.000 {built-in method builtins.hasattr}
+      100    0.002    0.000    0.005    0.000 _classes.py:1551(__init__)
+      300    0.003    0.000    0.004    0.000 memory_profiler.py:1201(choose_backend)
+      400    0.001    0.000    0.004    0.000 _methods.py:46(_sum)
+      100    0.001    0.000    0.004    0.000 memory_profiler.py:702(__init__)
+      100    0.004    0.000    0.004    0.000 arraysetops.py:320(_unique1d)
+     1400    0.004    0.000    0.004    0.000 flinalg.py:20(has_column_major_storage)
+      300    0.004    0.000    0.004    0.000 blas.py:383(getter)
+      400    0.003    0.000    0.004    0.000 warnings.py:181(_add_filter)
+      400    0.004    0.000    0.004    0.000 warnings.py:474(__enter__)
+    20200    0.004    0.000    0.004    0.000 {built-in method __new__ of type object at 0x00007FFA548659A0}
+     1000    0.003    0.000    0.004    0.000 numerictypes.py:284(issubclass_)
+     1840    0.003    0.000    0.004    0.000 ntpath.py:122(splitdrive)
+      100    0.000    0.000    0.003    0.000 validation.py:329(<listcomp>)
+      100    0.001    0.000    0.003    0.000 _base.py:271(_validate_targets)
+38166/37887    0.003    0.000    0.003    0.000 {built-in method builtins.len}
+      200    0.000    0.000    0.003    0.000 __init__.py:751(create_time)
+        2    0.000    0.000    0.003    0.002 sre_parse.py:913(parse)
+     53/2    0.000    0.000    0.003    0.002 sre_parse.py:411(_parse_sub)
+    186/5    0.001    0.000    0.003    0.001 sre_parse.py:469(_parse)
+    18000    0.003    0.000    0.003    0.000 enum.py:628(value)
+      500    0.001    0.000    0.003    0.000 _config.py:24(get_config)
+      200    0.001    0.000    0.003    0.000 _common.py:498(wrapper)
+      400    0.003    0.000    0.003    0.000 {built-in method numpy.empty}
+     1600    0.003    0.000    0.003    0.000 misc.py:180(_datacopied)
+      100    0.003    0.000    0.003    0.000 {method 'outer' of 'numpy.ufunc' objects}
+     1940    0.001    0.000    0.003    0.000 {built-in method builtins.any}
+      100    0.002    0.000    0.003    0.000 lapack.py:994(_compute_lwork)
+      200    0.000    0.000    0.003    0.000 _pswindows.py:984(create_time)
+      100    0.001    0.000    0.003    0.000 <__array_function__ internals>:2(where)
+      500    0.003    0.000    0.003    0.000 fromnumeric.py:70(<dictcomp>)
+      200    0.003    0.000    0.003    0.000 {built-in method psutil_windows.proc_times}
+      901    0.001    0.000    0.003    0.000 abc.py:141(__subclasscheck__)
+      100    0.001    0.000    0.002    0.000 contextlib.py:116(__exit__)
+      500    0.002    0.000    0.002    0.000 <frozen importlib._bootstrap>:1009(_handle_fromlist)
+      200    0.001    0.000    0.002    0.000 twodim_base.py:32(_min_int)
+      100    0.002    0.000    0.002    0.000 _base.py:76(__init__)
+      100    0.002    0.000    0.002    0.000 {method 'randint' of 'numpy.random.mtrand.RandomState' objects}
+    11845    0.002    0.000    0.002    0.000 {method 'endswith' of 'str' objects}
+      400    0.001    0.000    0.002    0.000 validation.py:1043(check_random_state)
+      200    0.000    0.000    0.002    0.000 __init__.py:1098(memory_info)
+      200    0.000    0.000    0.002    0.000 {built-in method builtins.next}
+     1840    0.002    0.000    0.002    0.000 {built-in method nt._getfullpathname}
+    18000    0.002    0.000    0.002    0.000 {method 'span' of 're.Match' objects}
+      500    0.002    0.000    0.002    0.000 validation.py:484(_ensure_no_complex_data)
+      200    0.001    0.000    0.002    0.000 <__array_function__ internals>:2(ravel)
+      400    0.002    0.000    0.002    0.000 warnings.py:493(__exit__)
+      200    0.000    0.000    0.002    0.000 _pswindows.py:881(memory_info)
+     1119    0.001    0.000    0.002    0.000 inspect.py:642(getfile)
+        2    0.000    0.000    0.002    0.001 sre_compile.py:598(_code)
+      400    0.002    0.000    0.002    0.000 validation.py:1653(_get_feature_names)
+    251/2    0.001    0.000    0.002    0.001 sre_compile.py:71(_compile)
+      200    0.000    0.000    0.002    0.000 memory_profiler.py:740(_count_ctxmgr)
+      100    0.002    0.000    0.002    0.000 getlimits.py:514(__init__)
+      200    0.001    0.000    0.002    0.000 <__array_function__ internals>:2(shape)
+      400    0.002    0.000    0.002    0.000 warnings.py:453(__init__)
+      970    0.001    0.000    0.002    0.000 ntpath.py:44(normcase)
+      500    0.001    0.000    0.002    0.000 <frozen importlib._bootstrap>:416(parent)
+    15500    0.002    0.000    0.002    0.000 {method 'isidentifier' of 'str' objects}
+      200    0.000    0.000    0.001    0.000 _pswindows.py:858(_get_raw_meminfo)
+      500    0.001    0.000    0.001    0.000 _config.py:16(_get_threadlocal_config)
+      901    0.001    0.000    0.001    0.000 {built-in method _abc._abc_subclasscheck}
+     7061    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+     6881    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+     2345    0.001    0.000    0.001    0.000 inspect.py:63(ismodule)
+      200    0.001    0.000    0.001    0.000 {built-in method psutil_windows.proc_memory_info}
+      200    0.001    0.000    0.001    0.000 {method 'astype' of 'numpy.generic' objects}
+     1400    0.001    0.000    0.001    0.000 {method 'sort' of 'list' objects}
+      300    0.001    0.000    0.001    0.000 getlimits.py:538(max)
+     2800    0.001    0.000    0.001    0.000 memory_profiler.py:695(<genexpr>)
+     1840    0.001    0.000    0.001    0.000 {method 'split' of 'str' objects}
+     5056    0.001    0.000    0.001    0.000 {method 'get' of 'dict' objects}
+      500    0.001    0.000    0.001    0.000 inspect.py:72(isclass)
+     2910    0.001    0.000    0.001    0.000 inspect.py:687(<genexpr>)
+      200    0.001    0.000    0.001    0.000 threading.py:75(RLock)
+     2100    0.001    0.000    0.001    0.000 {built-in method builtins.issubclass}
+      200    0.001    0.000    0.001    0.000 {built-in method numpy.arange}
+      200    0.001    0.000    0.001    0.000 fromnumeric.py:1718(ravel)
+      100    0.001    0.000    0.001    0.000 memory_profiler.py:782(disable_by_count)
+      100    0.000    0.000    0.001    0.000 contextlib.py:107(__enter__)
+      100    0.001    0.000    0.001    0.000 lapack.py:1029(_check_work_float)
+     4650    0.001    0.000    0.001    0.000 {method 'replace' of 'str' objects}
+     1500    0.001    0.000    0.001    0.000 {built-in method numpy.asanyarray}
+      100    0.000    0.000    0.001    0.000 <__array_function__ internals>:2(may_share_memory)
+      800    0.001    0.000    0.001    0.000 {built-in method time.time}
+      200    0.001    0.000    0.001    0.000 {method 'copy' of 'numpy.ndarray' objects}
+     2774    0.000    0.000    0.001    0.000 inspect.py:690(<genexpr>)
+      100    0.001    0.000    0.001    0.000 _pca.py:346(__init__)
+     1800    0.001    0.000    0.001    0.000 memory_profiler.py:1215(<genexpr>)
+      500    0.001    0.000    0.001    0.000 fromnumeric.py:2118(_sum_dispatcher)
+      200    0.001    0.000    0.001    0.000 getlimits.py:525(min)
+      100    0.000    0.000    0.001    0.000 inspect.py:484(unwrap)
+      200    0.000    0.000    0.001    0.000 linecache.py:37(getlines)
+      400    0.001    0.000    0.001    0.000 {method 'remove' of 'list' objects}
+     4650    0.001    0.000    0.001    0.000 {built-in method nt.fspath}
+      100    0.000    0.000    0.001    0.000 memory_profiler.py:748(wrap_function)
+     1840    0.001    0.000    0.001    0.000 {method 'join' of 'str' objects}
+     1438    0.000    0.000    0.001    0.000 sre_parse.py:164(__getitem__)
+      100    0.000    0.000    0.001    0.000 memory_profiler.py:775(enable_by_count)
+      970    0.001    0.000    0.001    0.000 {method 'lower' of 'str' objects}
+      100    0.000    0.000    0.000    0.000 contextlib.py:237(helper)
+      505    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+     1157    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+      200    0.000    0.000    0.000    0.000 fromnumeric.py:1928(shape)
+   278/30    0.000    0.000    0.000    0.000 sre_parse.py:174(getwidth)
+       27    0.000    0.000    0.000    0.000 sre_parse.py:96(closegroup)
+     1840    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+      200    0.000    0.000    0.000    0.000 memory_profiler.py:689(items)
+      100    0.000    0.000    0.000    0.000 coroutines.py:160(iscoroutinefunction)
+        1    0.000    0.000    0.000    0.000 linecache.py:82(updatecache)
+      100    0.000    0.000    0.000    0.000 {method 'sort' of 'numpy.ndarray' objects}
+      300    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+      100    0.000    0.000    0.000    0.000 {built-in method numpy.zeros}
+       62    0.000    0.000    0.000    0.000 sre_compile.py:276(_optimize_charset)
+      647    0.000    0.000    0.000    0.000 sre_parse.py:254(get)
+      100    0.000    0.000    0.000    0.000 memory_profiler.py:842(enable)
+      100    0.000    0.000    0.000    0.000 contextlib.py:81(__init__)
+      100    0.000    0.000    0.000    0.000 _base.py:281(_warn_from_fit_status)
+      200    0.000    0.000    0.000    0.000 multiarray.py:1071(copyto)
+      100    0.000    0.000    0.000    0.000 memory_profiler.py:849(disable)
+      200    0.000    0.000    0.000    0.000 multiarray.py:736(dot)
+      501    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+      500    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+      300    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
+      100    0.000    0.000    0.000    0.000 memory_profiler.py:640(__init__)
+      100    0.000    0.000    0.000    0.000 _base.py:488(_compute_kernel)
+      400    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+      200    0.000    0.000    0.000    0.000 <string>:1(__new__)
+      894    0.000    0.000    0.000    0.000 sre_parse.py:233(__next)
+      100    0.000    0.000    0.000    0.000 inspect.py:179(iscoroutinefunction)
+        3    0.000    0.000    0.000    0.000 lapack.py:896(get_lapack_funcs)
+      500    0.000    0.000    0.000    0.000 inspect.py:252(iscode)
+      200    0.000    0.000    0.000    0.000 fromnumeric.py:1714(_ravel_dispatcher)
+      100    0.000    0.000    0.000    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+      200    0.000    0.000    0.000    0.000 fromnumeric.py:1924(_shape_dispatcher)
+      100    0.000    0.000    0.000    0.000 arraysetops.py:125(_unpack_tuple)
+        3    0.000    0.000    0.000    0.000 blas.py:325(_get_funcs)
+      100    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+      254    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+     1200    0.000    0.000    0.000    0.000 {built-in method _warnings._filters_mutated}
+      800    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+      100    0.000    0.000    0.000    0.000 fromnumeric.py:3585(_var_dispatcher)
+      200    0.000    0.000    0.000    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+      300    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+      300    0.000    0.000    0.000    0.000 inspect.py:228(istraceback)
+      100    0.000    0.000    0.000    0.000 core.py:6374(isMaskedArray)
+      100    0.000    0.000    0.000    0.000 inspect.py:501(_is_wrapper)
+      508    0.000    0.000    0.000    0.000 sre_parse.py:249(match)
+      300    0.000    0.000    0.000    0.000 inspect.py:158(isfunction)
+      100    0.000    0.000    0.000    0.000 inspect.py:882(__init__)
+      200    0.000    0.000    0.000    0.000 inspect.py:80(ismethod)
+      200    0.000    0.000    0.000    0.000 {built-in method psutil_windows.check_pid_range}
+      503    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 tokenize.py:443(open)
+      600    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+      200    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
+      100    0.000    0.000    0.000    0.000 arraysetops.py:133(_unique_dispatcher)
+      200    0.000    0.000    0.000    0.000 _pswindows.py:767(__init__)
+      100    0.000    0.000    0.000    0.000 twodim_base.py:432(_trilu_dispatcher)
+      100    0.000    0.000    0.000    0.000 fromnumeric.py:3317(_mean_dispatcher)
+      100    0.000    0.000    0.000    0.000 fromnumeric.py:1117(_argmax_dispatcher)
+      100    0.000    0.000    0.000    0.000 multiarray.py:341(where)
+      459    0.000    0.000    0.000    0.000 sre_parse.py:160(__len__)
+      100    0.000    0.000    0.000    0.000 multiarray.py:1368(may_share_memory)
+      100    0.000    0.000    0.000    0.000 {sklearn.svm._libsvm.set_verbosity_wrap}
+      393    0.000    0.000    0.000    0.000 sre_parse.py:172(append)
+      200    0.000    0.000    0.000    0.000 {built-in method sys.settrace}
+      300    0.000    0.000    0.000    0.000 inspect.py:238(isframe)
+      276    0.000    0.000    0.000    0.000 sre_parse.py:111(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'readlines' of '_io._IOBase' objects}
+       67    0.000    0.000    0.000    0.000 sre_compile.py:423(_simple)
+      224    0.000    0.000    0.000    0.000 sre_parse.py:286(tell)
+        1    0.000    0.000    0.000    0.000 tokenize.py:350(detect_encoding)
+       62    0.000    0.000    0.000    0.000 sre_compile.py:249(_compile_charset)
+      100    0.000    0.000    0.000    0.000 tokenize.py:672(generate_tokens)
+        1    0.000    0.000    0.000    0.000 tokenize.py:374(read_or_stop)
+        1    0.000    0.000    0.000    0.000 {method 'readline' of '_io.BufferedReader' objects}
+      100    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method io.open}
+        9    0.000    0.000    0.000    0.000 sre_compile.py:411(_mk_bitmap)
+       54    0.000    0.000    0.000    0.000 sre_parse.py:408(_uniq)
+      100    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        3    0.000    0.000    0.000    0.000 blas.py:259(find_best_blas_type)
+      216    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+      100    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+      200    0.000    0.000    0.000    0.000 __init__.py:450(pid)
+       27    0.000    0.000    0.000    0.000 sre_parse.py:84(opengroup)
+      100    0.000    0.000    0.000    0.000 {built-in method builtins.iter}
+       32    0.000    0.000    0.000    0.000 sre_parse.py:343(_escape)
+      100    0.000    0.000    0.000    0.000 {built-in method sys.gettrace}
+        9    0.000    0.000    0.000    0.000 sre_compile.py:413(<listcomp>)
+        2    0.000    0.000    0.000    0.000 sre_compile.py:536(_compile_info)
+      358    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+       54    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+       59    0.000    0.000    0.000    0.000 sre_parse.py:81(groups)
+        2    0.000    0.000    0.000    0.000 enum.py:836(__and__)
+       68    0.000    0.000    0.000    0.000 sre_parse.py:168(__setitem__)
+        2    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        3    0.000    0.000    0.000    0.000 codecs.py:319(decode)
+       27    0.000    0.000    0.000    0.000 sre_compile.py:65(_combine_flags)
+        3    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+        4    0.000    0.000    0.000    0.000 enum.py:284(__call__)
+       13    0.000    0.000    0.000    0.000 sre_parse.py:295(_class_escape)
+        1    0.000    0.000    0.000    0.000 tokenize.py:380(find_cookie)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:224(__init__)
+        1    0.000    0.000    0.000    0.000 codecs.py:309(__init__)
+        9    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 sre_compile.py:492(_get_charset_prefix)
+        4    0.000    0.000    0.000    0.000 enum.py:526(__new__)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:897(fix_flags)
+        4    0.000    0.000    0.000    0.000 sre_compile.py:595(isstring)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:461(_get_literal_prefix)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:76(__init__)
+       11    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 codecs.py:260(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 sre_compile.py:453(_get_iscased)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
